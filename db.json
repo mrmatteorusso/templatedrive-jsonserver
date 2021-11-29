@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": "0.9c6ebca3bf19e",
+      "name": {
+        "name": "asddd",
+        "password": "asdad"
+      },
+      "hired": true
+    },
+    {
+      "id": "0.a1a77f65aac04",
+      "name": {
+        "name": "sfdf",
+        "surname": "gdgd"
+      },
+      "hired": true
+    },
+    {
+      "id": "0.8af7d59cbddf2",
+      "name": {
+        "name": "sfdf",
+        "surname": "gdgd"
+      },
+      "hired": true
+    },
+    {
+      "id": "0.6d80168da153f",
+      "name": {
+        "name": "sfdf",
+        "surname": "gdgd"
+      },
+      "hired": true
+    },
+    {
+      "id": "0.d66998623c51a",
+      "name": {
+        "name": "sfdf1",
+        "surname": "gdgd"
+      },
+      "hired": true
+    }
+  ]
+}
