@@ -14,17 +14,15 @@ export class EmployeeService {
     return this.http.get<EmployeeInterface[]>('http://localhost:3000/employees')
   }
 
-  addUser(name: string) {
+  addUser(params: {name: string, surname: string}) {
     const uniqueId = Math.random().toString(16)
     const employee = {
       id: uniqueId,
-      name,
-      //surname,
+      name: params,
       hired: true
     }
 
     return this.http.post<EmployeeInterface>('http://localhost:3000/employees', employee)
-  
   }
 
 
