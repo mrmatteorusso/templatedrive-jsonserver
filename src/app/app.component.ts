@@ -22,6 +22,16 @@ export class AppComponent {
       this.employees = emp;
       console.log(this.employees)
     })
+
+    // setTimeout(() => {
+    //   console.log(this.employeeForm)
+    //   this.employeeForm.setValue({name: '123', surname: '456'})
+    // }, 1000)
+
+    // setTimeout(() => {
+    //   console.log(this.employeeForm)
+    //   this.employeeForm.setValue({name: '1230000000', surname: '4560000000'})
+    // }, 2000)
   }
 
   addEmp(form: NgForm): void {    
@@ -35,12 +45,18 @@ export class AppComponent {
       console.log(this.editId);
       this.editId = '';
     }
+
+    // remove new employee just insered
     this.employeeForm.resetForm();
   }
 
   onShowEdit(employee: EmployeeInterface) {
     this.editId = employee.id;
-    this.employeeForm.setValue(employee.name);
+
+    this.employeeForm.setValue({
+      name: employee.name.name,
+      surname: employee.name.surname
+    });
   }
 
   removeEmployee(id: string): void {
