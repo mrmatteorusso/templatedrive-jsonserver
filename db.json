@@ -4,7 +4,7 @@
       "id": "0.9c6ebca3bf19e",
       "name": {
         "name": "asddd",
-        "password": "asdad"
+        "surname": "asdad"
       },
       "hired": true
     },
@@ -37,6 +37,22 @@
       "name": {
         "name": "sfdf1",
         "surname": "gdgd"
+      },
+      "hired": true
+    },
+    {
+      "id": "0.faefa83c527b4",
+      "name": {
+        "name": "asddd",
+        "surname": "asdad"
+      },
+      "hired": true
+    },
+    {
+      "id": "0.0b783f13f7a07",
+      "name": {
+        "name": "asdfaf",
+        "surname": "asfdasfd"
       },
       "hired": true
     }

@@ -1,9 +1,11 @@
-<form #employeeForm="ngForm" (ngSubmit)="addEmp(employeeForm.value)">
+<form #employeeForm="ngForm" (ngSubmit)="addEmp(employeeForm)">
   <input type="text" name="name" placeholder="Employer's name" ngModel>
   <input type="text" name="surname" placeholder="Employer's surname" ngModel>
   <button>Login</button>
 </form>
 
-<li *ngFor="let employee of employees">{{employee.name.name}} {{employee.name.surname}}<button
-    (click)="removeEmployee(employee.id)">Delete</button>
+<li *ngFor="let employee of employees">
+  {{employee.name.name}} {{employee.name.surname}}
+  <button (click)="removeEmployee(employee.id)">Delete</button>
+  <button (click)="onShowEdit(employee)">Edit</button>
 </li>
